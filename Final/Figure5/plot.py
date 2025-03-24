@@ -4,6 +4,7 @@ import pandas as pd
 
 data=pd.read_csv("temp.csv")
 
+
 fig, ax = plt.subplots(1)
 
 # Create a rectangle patch

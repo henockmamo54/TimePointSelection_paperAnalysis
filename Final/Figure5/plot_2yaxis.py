@@ -4,8 +4,8 @@ import pandas as pd
 
 # Load data
 data = pd.read_csv("temp.csv")
-
-fig, ax1 = plt.subplots()
+ 
+fig, ax1 = plt.subplots(figsize=(9,6))
 
 # Create a second y-axis
 ax2 = ax1.twinx()
@@ -43,6 +43,7 @@ ax2.set_ylabel( r"$(I_0(0) - I_0^{asmyp}) (1-e^{-kt})$" + "\nLower Limit (exp.)"
 ax1.legend(loc='upper right', frameon=False)
 ax2.legend(loc='lower right', frameon=False)
 
+plt.tight_layout()
 # Save and show plot
 plt.savefig("Figure5.jpeg", dpi=900)
 plt.show()
